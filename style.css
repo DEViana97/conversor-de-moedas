@@ -7,19 +7,23 @@
 
 body {
   background: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
   width: 375px;
   background: #f4f4f4;
-  margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 header {
   background: #1b83e2;
   height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header h1 {
@@ -28,8 +32,6 @@ header h1 {
   font-size: 24px;
   line-height: 18px;
   color: #f4f4f4;
-  text-align: center;
-  padding-top: 25px;
 }
 
 main {
@@ -100,11 +102,19 @@ button:active {
 section {
   border: 1px solid #1b83e2;
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 10px;
 }
 
 .currency-container {
-  text-align: center;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 .currency-name {
@@ -124,6 +134,5 @@ section {
 }
 
 .arrow-image {
-  margin: 15px auto;
   display: block;
 }
